@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    box-sizing: border-box;
 }
 
 .chair {
@@ -11,13 +12,14 @@ body{
     margin-top: 100px;
     font-size: 3rem;
     font-weight: bolder;
-    font-family: 'Spartan', sans-serif;
+    /* font-family: 'Spartan', sans-serif; */
     color: rgb(9, 9, 51);
 }
 
 .des {
-    font-family: 'Spartan', sans-serif;
+    /* font-family: 'Spartan', sans-serif; */
     color: slategrey;
+    font-size: 20px;
 }
 
 .dark {
@@ -27,29 +29,28 @@ body{
 .Furniture {
     font-size: 2rem;
     font-weight: 500;
-    font-family: 'Spartan', sans-serif;
+    /* font-family: 'Spartan', sans-serif; */
     color: rgb(9, 9, 51);
-}
-
-.Furniture {
-    position: relative;
+    position: absolute;
     left: 500px;
-    bottom: 260px;
+    bottom: 100px;
 }
 
 .furdes {
     position: absolute;
-    left: 500px;
+    left: 435px;
     bottom: -50px;
-    font-family: 'Spartan', sans-serif;
+    /* font-family: 'Spartan', sans-serif; */
     color: slategrey;
+    font-size: 20px;
 
 }
 
 .light {
-    float: right;
-    position: relative;
+    position: absolute;
     bottom: 370px;
+    top: 540px;
+    right: 0px;
 }
 
 /* .bg-img {
@@ -64,4 +65,23 @@ body{
 
 .bg-img {
     position: absolute;
+}
+
+.headLinks {
+    text-decoration: none;
+    color: white;
+    /* font-family: 'Spartan', sans-serif; */
+    margin-left: 50px;
+    font-size: 20px;
+    /* font-weight: 540; */
+}
+
+.headLinks:hover {
+    color: #4f4f4f;
+}
+
+.brand {
+    font-weight: 800;
+    margin-right: 30px;
+    font-size: 30px;
 }
