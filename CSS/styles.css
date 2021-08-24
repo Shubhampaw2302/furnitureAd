@@ -24,6 +24,7 @@ body{
 
 .dark {
     clear: left;
+    display: flex;
 }
 
 .Furniture {
@@ -43,6 +44,7 @@ body{
     /* font-family: 'Spartan', sans-serif; */
     color: slategrey;
     font-size: 20px;
+    max-width: 600px;
 
 }
 
