@@ -45,7 +45,12 @@ body{
     color: slategrey;
     font-size: 20px;
     max-width: 600px;
+    margin-left: 20px;
 
+}
+
+.upper {
+    display: flex;
 }
 
 .light {
@@ -54,16 +59,6 @@ body{
     top: 540px;
     right: 0px;
 }
-
-/* .bg-img {
-    background-image: url("../images/desktop-image-hero-1.jpg");
-    min-height: 380px;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-} */
 
 .bg-img {
     position: absolute;
@@ -86,4 +81,5 @@ body{
     font-weight: 800;
     margin-right: 30px;
     font-size: 30px;
+    font-family: 'Spartan', sans-serif;
 }
