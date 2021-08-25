@@ -53,6 +53,10 @@ body{
     display: flex;
 }
 
+.upper_description {
+    margin-right: 20px;
+}
+
 .light {
     position: absolute;
     bottom: 370px;
@@ -98,4 +102,9 @@ span {
     color: white;
     text-decoration: none;
     padding: 40px 40px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: slategray;
 }
