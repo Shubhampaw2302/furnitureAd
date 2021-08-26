@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@855&display=swap" rel="stylesheet">
@@ -9,6 +9,9 @@
 <body>
 
   <div class="bg-img">
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
     <div class="container">
       <div class="topnav">
         <a class="headLinks brand" href="#">Room</a>
@@ -55,17 +58,18 @@
       </div>
     </div>
     
-    <span><a id="prevBtn" class="btn" onclick="plusSlides(-1)"><</a><a id="nextBtn" class="btn" onclick="plusSlides(-1)">></a></span>
+    <span id="nextPrev"><a id="prevBtn" class="btn" onclick="plusSlides(-1)"><</a><a id="nextBtn" class="btn" onclick="plusSlides(-1)">></a></span>
   </div>
 
   <div class="dark">
-      <img src="images/image-about-dark.jpg" alt="dark">    
-      <p class="Furniture">About Our furniture</p>
-      <p class="furdes">Our multifunctional blends design & function to suit your individual taste.
-      Make each room unique, or pick a cohesive theme that best express your interests & what inspires you.
-      Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists
-      are available to help you create your dream place.</p>
-      
+      <img src="images/image-about-dark.jpg" alt="dark">
+      <div class="bot_des">
+        <p class="Furniture">About Our furniture</p>
+        <p class="furdes">Our multifunctional blends design & function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests & what inspires you.
+        Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists
+        are available to help you create your dream place.</p>
+      </div>
       <img class="light" src="images/image-about-light.jpg" alt="light">
   </div>
     

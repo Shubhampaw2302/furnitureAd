@@ -4,7 +4,7 @@ body{
 }
 
 .chair {
-    float: left;
+    /* float: left; */
     padding-right: 100px;
 }
 
@@ -14,6 +14,10 @@ body{
     font-weight: bolder;
     /* font-family: 'Spartan', sans-serif; */
     color: rgb(9, 9, 51);
+}
+
+.menu-btn {
+    visibility: hidden;
 }
 
 .des {
@@ -32,37 +36,41 @@ body{
     font-weight: 500;
     /* font-family: 'Spartan', sans-serif; */
     color: rgb(9, 9, 51);
-    position: absolute;
+    /* position: absolute;
     left: 500px;
-    bottom: 100px;
+    bottom: 100px; */
 }
 
 .furdes {
-    position: absolute;
+    /* position: absolute;
     left: 435px;
-    bottom: -50px;
+    bottom: -50px; */
     /* font-family: 'Spartan', sans-serif; */
     color: slategrey;
     font-size: 20px;
-    max-width: 600px;
+    /* max-width: 600px; */
+}
+
+.bot_des {
     margin-left: 20px;
-
 }
 
-.upper {
+/* .upper {
     display: flex;
-}
+} */
 
 .upper_description {
     margin-right: 20px;
 }
 
-.light {
+/* .light {
     position: absolute;
     bottom: 370px;
     top: 535px;
     right: 0px;
-}
+} */
+
+
 
 .bg-img {
     position: absolute;
@@ -110,7 +118,7 @@ span {
 }
 
 .mySlides {
-    display: none;
+    display: flex;
 }
 
 @keyframes fading {
@@ -133,4 +141,101 @@ footer {
     padding: 30px;
     background-color: lightgrey;
     margin-top: 30px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1293px) {
+    .chair {
+        width: 60vw;
+    }
+
+    .container {
+        visibility: hidden;
+    }
+
+    span {
+        top: 54%;
+    }
+
+    .light {
+        width: 70%;
+        height: 70%;
+    }
+
+    .head, .des, .Furniture, .furdes{
+        text-align: center;
+    }
+
+    .menu-btn {
+        visibility: visible;
+        position: absolute;
+        z-index: 5;
+        right: 1rem;
+        top: 1rem;
+        height: 20px;
+        width: 28px;
+        cursor: pointer;
+        /* background-color: black; */
+    }
+      
+    .menu-btn .menu__burger {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+    }
+      
+    .menu-btn .menu__burger::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        width: 28px;
+        height: 3px;
+    }
+      
+    .menu-btn .menu__burger::after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        width: 20px;
+        height: 3px;
+    }
+      
+          
+
+
+@media (max-width: 900px) {
+    .mySlides {
+        flex-direction: column;
+    }
+
+    .chair {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dark {
+        flex-direction: column;
+    }
+
+    .light {
+        width: 100%;
+    }
+
+    #nextPrev {
+        position: absolute;
+        top: 52vw;
+        right: 0px;
+
+    }
+
+    .btn {
+        font-size: 8vw;
+        padding: 20px 20px;
+    }
 }
